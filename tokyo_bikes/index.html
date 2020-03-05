@@ -7,9 +7,45 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <style>
+            *{
+                padding:0;
+                margin:0;
+            }
+            #parallax{
+                background-image: url("./assets/tokyobike-Oksana.jpg");
+                padding-bottom: 100px;
+            }
+            ul{
+                display: flex;
+                flex-direction: row;
+            }
+            li{
+                list-style: none;
+                padding: 5px;
+            }
+            nav{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: white;
+            }
+            b{
+                padding: 5px;
+            }
+            #bar{
+                background-color: white;
+                opacity: 0.5;
+            }
+            article{
+                opacity: 1;
+                color: black;
+                padding: 5px;
+            }
+        </style>
     </head>
     <body>
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="28px" viewBox="0 0 52 28" enable-background="new 0 0 52 28" xml:space="preserve">
+        <!--<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="28px" viewBox="0 0 52 28" enable-background="new 0 0 52 28" xml:space="preserve">
 	 
             <polyline fill="none" stroke="
                    
@@ -17,7 +53,33 @@
                    
                  " stroke-width="4" stroke-miterlimit="10" points="50.038,2.546 25.928,24.541 1.816,2.546
                 "></polyline>
-            </svg>
+            </svg>-->
+            <div>
+                <div id="parallax">
+                    <nav>
+                        <b>TokyoBike</b>
+                        <ul>
+                            <li>Shop </li>
+                            <li> Inside TokyoBike </li>
+                            <li> My Account </li>
+                            <li> Cart </li>
+                        </ul>
+                    </nav>
+                    <img src="./assets/tokyobike-Oksana.jpg" height="600px" style="visibility: hidden;" />
+                    <div id="bar">
+                        <article>
+                            <h2>Our little TokyoBike</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga iste ratione quidem minima, repudiandae laborum optio architecto repellendus. Animi quod dicta quidem quam deserunt illo nostrum consequuntur, maiores vel esse.</p>
+                            <button>Shop now</button>
+                        </article>
+                    </div>
+                </div>
+                <div id="lineup"></div>
+                <div id="inside"></div>
+                <div id="footer">
+
+                </div>
+            </div>
         <script src="" async defer></script>
     </body>
 </html>
