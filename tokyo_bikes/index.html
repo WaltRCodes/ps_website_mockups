@@ -15,6 +15,9 @@
             #parallax{
                 background-image: url("./assets/tokyobike-Oksana.jpg");
                 padding-bottom: 100px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                
             }
             ul{
                 display: flex;
@@ -22,7 +25,7 @@
             }
             li{
                 list-style: none;
-                padding: 5px;
+                margin: 5px;
             }
             nav{
                 display: flex;
@@ -31,7 +34,7 @@
                 background-color: white;
             }
             b{
-                padding: 5px;
+                margin: 5px;
             }
             #bar{
                 background-color: white;
@@ -40,7 +43,42 @@
             article{
                 opacity: 1;
                 color: black;
-                padding: 5px;
+                margin: 15px;
+            }
+            #lineup{
+                height:1000px;
+                background-color: beige;
+            }
+            #inside{
+                height:1000px;
+            }
+            #footer{
+                height:1000px;
+                background-color: beige;
+                width:100%;
+            }
+            .row{
+                display:flex;
+                flex-direction: row;
+            }
+            .cell{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                height: 500px;
+                margin: 20px;
+            }
+            img{
+                width:auto;
+                height:177px;
+            }
+            #bck{
+                height:500px;
+            }
+            #container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         </style>
     </head>
@@ -54,7 +92,7 @@
                  " stroke-width="4" stroke-miterlimit="10" points="50.038,2.546 25.928,24.541 1.816,2.546
                 "></polyline>
             </svg>-->
-            <div>
+            <div id="container">
                 <div id="parallax">
                     <nav>
                         <b>TokyoBike</b>
@@ -65,7 +103,7 @@
                             <li> Cart </li>
                         </ul>
                     </nav>
-                    <img src="./assets/tokyobike-Oksana.jpg" height="600px" style="visibility: hidden;" />
+                    <img id="bck" src="./assets/tokyobike-Oksana.jpg"  style="visibility: hidden;" />
                     <div id="bar">
                         <article>
                             <h2>Our little TokyoBike</h2>
@@ -74,10 +112,45 @@
                         </article>
                     </div>
                 </div>
-                <div id="lineup"></div>
+                <div id="lineup">
+                    <div class="row">
+                        <div class="cell">
+                            <img src="./assets/products/Bisou_blue-gray.jpg">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="cell">
+                            <img src="./assets/products/CS26_mustard.jpg">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="cell">
+                            <img src="./assets/products/Little_cedar-green.jpg">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+
+                        </div>
+                        <div class="cell">
+
+                        </div>
+                        <div class="cell">
+                            
+                        </div>
+                    </div>
+                </div>
                 <div id="inside"></div>
                 <div id="footer">
-
+                    234234
                 </div>
             </div>
         <script src="" async defer></script>
