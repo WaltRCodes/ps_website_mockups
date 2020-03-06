@@ -13,19 +13,25 @@
                 margin:0;
             }
             #parallax{
-                background-image: url("./assets/tokyobike-Oksana.jpg");
+                background: url("./assets/tokyobike-Oksana.jpg");
                 padding-bottom: 100px;
                 background-size: cover;
                 background-repeat: no-repeat;
-                
+                width:100%;
             }
-            ul{
+            #menu{
                 display: flex;
                 flex-direction: row;
             }
+            ul{
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
             li{
                 list-style: none;
-                margin: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 5px;
             }
             nav{
                 display: flex;
@@ -34,7 +40,8 @@
                 background-color: white;
             }
             b{
-                margin: 5px;
+                padding-top: 3px;
+                padding-bottom: 3px;
             }
             #bar{
                 background-color: white;
@@ -43,34 +50,48 @@
             article{
                 opacity: 1;
                 color: black;
-                margin: 15px;
+                padding-top: 8px;
+                padding-bottom: 8px;
             }
             #lineup{
-                height:1000px;
-                background-color: beige;
+                background-color: #EEEEEE;
+                width:100%;
+                padding-top: 25px;
+                padding-bottom: 25px;
             }
             #inside{
-                height:1000px;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
             #footer{
-                height:1000px;
-                background-color: beige;
+                background-color: #EEEEEE;
                 width:100%;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
             .row{
                 display:flex;
                 flex-direction: row;
+                width:100%;
+                height: 50%;
+                padding-top: 25px;
+                padding-bottom: 25px;
             }
             .cell{
                 display:flex;
                 flex-direction: column;
                 align-items: center;
-                height: 500px;
-                margin: 20px;
+                padding: 20px;
             }
-            img{
-                width:auto;
-                height:177px;
+            .bikes{
+                width: 100%;
+                height:100%;
             }
             #bck{
                 height:500px;
@@ -96,7 +117,7 @@
                 <div id="parallax">
                     <nav>
                         <b>TokyoBike</b>
-                        <ul>
+                        <ul id="menu">
                             <li>Shop </li>
                             <li> Inside TokyoBike </li>
                             <li> My Account </li>
@@ -115,42 +136,102 @@
                 <div id="lineup">
                     <div class="row">
                         <div class="cell">
-                            <img src="./assets/products/Bisou_blue-gray.jpg">
+                            <img class="bikes" src="./assets/products/Bisou_blue-gray.jpg">
                             <ul>
-                                <li></li>
-                                <li></li>
+                                <li>SPORT</li>
+                                <li>$850.00</li>
                             </ul>
                         </div>
                         <div class="cell">
-                            <img src="./assets/products/CS26_mustard.jpg">
+                            <img class="bikes" src="./assets/products/CS26_mustard.jpg">
                             <ul>
-                                <li></li>
-                                <li></li>
+                                <li>CLASSIC SPORT</li>
+                                <li>$825.00</li>
                             </ul>
                         </div>
                         <div class="cell">
-                            <img src="./assets/products/Little_cedar-green.jpg">
+                            <img class="bikes" src="./assets/products/Little_cedar-green.jpg">
                             <ul>
-                                <li></li>
-                                <li></li>
+                                <li>BISOU</li>
+                                <li>$695.00</li>
                             </ul>
                         </div>
                     </div>
                     <div class="row">
                         <div class="cell">
-
+                            <img class="bikes" src="./assets/products/MiniVelo_rose.jpg">
+                            <ul>
+                                <li>SINGLE SPEED</li>
+                                <li>$750.00</li>
+                            </ul>
                         </div>
                         <div class="cell">
-
+                            <img class="bikes" src="./assets/products/Sport_black.jpg">
+                            <ul>
+                                <li>MINI VELO</li>
+                                <li>$815.00</li>
+                            </ul>
                         </div>
                         <div class="cell">
-                            
+                            <img class="bikes" src="./assets/products/SS_deep-forest.jpg">
+                            <ul>
+                                <li>LITTLE TOKYOBIKE</li>
+                                <li>$315.00</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div id="inside"></div>
+                <div id="inside">
+                    <h3>INSIDE TOKYOBIKE</h3>
+                    <div class="row">
+                        <div class="cell">
+                            <h2>A DAY AT CANNON BEACH</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In sed debitis provident corporis voluptatibus perspiciatis molestias rem fugit, neque sequi quod eius culpa quia. Facere corrupti exercitationem nulla rem aliquam!</p>
+                            <button>SEE MORE</button>
+                        </div>
+                        <div class="cell">
+                            <h2>COLLABORATIONS</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusantium dolores dolor saepe tempora vitae veniam impedit est magni repudiandae quas, recusandae laudantium reprehenderit. Rerum tenetur deserunt neque illo nemo.</p>
+                            <button>SEE ALL</button>
+                        </div>
+                        <div class="cell">
+                            <h2>WHEN IN TOKYO</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus velit a natus totam quae rem facilis culpa, distinctio, animi rerum ratione beatae. Eaque veniam animi tempore aut doloremque magni explicabo.</p>
+                            <button>TAKE ME THERE</button>
+                        </div>
+                    </div>
+                </div>
                 <div id="footer">
-                    234234
+                    <div class="row">
+                        <div class="underline">
+                            <h4>TOKYOBIKE</h4>
+                            <ul>
+                                <li>ABOUT US</li>
+                                <li>FAQ</li>
+                                <li>PRIVACY POLIC</li>
+                                <li>TERM & CONDITIONS</li>
+                                <li>REVIEWS</li>
+                                <li>SEARCH</li>
+                            </ul>
+                        </div>
+                        <div class="underline">
+                            <h4>CUSTOMER SERVICE</h4>
+                            <ul>
+                                <li>EXCHANGE & RETURNS</li>
+                                <li>ASSEMBLY</li>
+                                <li>WARRANTY</li>
+                                <li>FINANCING</li>
+                                <li>4-DAY SALE T&C</li>
+                            </ul>
+                        </div>
+                        <div class="cell">
+                            <h4 class="underline">NEWSLETTER</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus velit a natus totam quae rem facilis culpa, distinctio, animi rerum ratione beatae. Eaque veniam animi tempore aut doloremque magni explicabo.</p>
+                            <input placeholder="Add you email here">
+                        </div>
+                        
+                    </div>
+                    @TOKYOBIKE 2020
                 </div>
             </div>
         <script src="" async defer></script>
