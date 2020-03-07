@@ -18,14 +18,22 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 width:100%;
+                height: max-content;
+                padding-bottom: 125px;
             }
             #menu{
                 display: flex;
                 flex-direction: row;
             }
+            h4{
+                width:100%;
+                text-align: left;
+            }
             ul{
                 padding-top: 5px;
                 padding-bottom: 5px;
+                padding-right: 6px;
+                text-align: left;
             }
             li{
                 list-style: none;
@@ -38,10 +46,12 @@
                 flex-direction: row;
                 justify-content: space-between;
                 background-color: white;
+                height: fit-content;
             }
-            b{
-                padding-top: 3px;
-                padding-bottom: 3px;
+            #logo{
+                padding-top: 6px;
+                padding-left: 6px;
+                height: fit-content;
             }
             #bar{
                 background-color: white;
@@ -58,6 +68,7 @@
                 width:100%;
                 padding-top: 25px;
                 padding-bottom: 25px;
+                
             }
             #inside{
                 padding-top: 25px;
@@ -69,7 +80,7 @@
             #footer{
                 background-color: #EEEEEE;
                 width:100%;
-                padding-top: 25px;
+                margin-top: 150px;
                 padding-bottom: 25px;
                 display: flex;
                 flex-direction: column;
@@ -78,6 +89,7 @@
             .row{
                 display:flex;
                 flex-direction: row;
+                justify-content: space-around;
                 width:100%;
                 height: 50%;
                 padding-top: 25px;
@@ -88,6 +100,11 @@
                 flex-direction: column;
                 align-items: center;
                 padding: 20px;
+                width:30%;
+            }
+            .cellList{
+                width: 100%;
+                text-align: left;
             }
             .bikes{
                 width: 100%;
@@ -100,6 +117,25 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+            }
+            button{
+                background-color: white;
+            }
+            .underline{
+                border:solid 2px;
+                border-style: none none solid none;
+            }
+            form{
+                width: 100%;
+            }
+            input{
+                width:70%;
+            }
+            #deal{
+                background-color: green;
+                width:100%;
+                text-align: center;
+                color:white;
             }
         </style>
     </head>
@@ -114,9 +150,12 @@
                 "></polyline>
             </svg>-->
             <div id="container">
+                <div id="deal">
+                    <h3>FREE SHIPPING ON ALL CONTINENTAL US ORDER</h3>
+                </div>
                 <div id="parallax">
                     <nav>
-                        <b>TokyoBike</b>
+                        <img id="logo"src="./assets/logo.png">
                         <ul id="menu">
                             <li>Shop </li>
                             <li> Inside TokyoBike </li>
@@ -134,6 +173,7 @@
                     </div>
                 </div>
                 <div id="lineup">
+                    <h3 style="text-align: center;">MEET THE TOKYOBIKE LINE UP</h3>
                     <div class="row">
                         <div class="cell">
                             <img class="bikes" src="./assets/products/Bisou_blue-gray.jpg">
@@ -185,16 +225,19 @@
                     <h3>INSIDE TOKYOBIKE</h3>
                     <div class="row">
                         <div class="cell">
+                            <img class="bikes" src="./assets/Features_530x.jpg">
                             <h2>A DAY AT CANNON BEACH</h2>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In sed debitis provident corporis voluptatibus perspiciatis molestias rem fugit, neque sequi quod eius culpa quia. Facere corrupti exercitationem nulla rem aliquam!</p>
                             <button>SEE MORE</button>
                         </div>
                         <div class="cell">
+                            <img class="bikes" src="./assets/Collabs_530x.jpg">
                             <h2>COLLABORATIONS</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusantium dolores dolor saepe tempora vitae veniam impedit est magni repudiandae quas, recusandae laudantium reprehenderit. Rerum tenetur deserunt neque illo nemo.</p>
                             <button>SEE ALL</button>
                         </div>
                         <div class="cell">
+                            <img class="bikes" src="./assets/Tokyo-by-tokyobike_530x.jpg">
                             <h2>WHEN IN TOKYO</h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus velit a natus totam quae rem facilis culpa, distinctio, animi rerum ratione beatae. Eaque veniam animi tempore aut doloremque magni explicabo.</p>
                             <button>TAKE ME THERE</button>
@@ -203,10 +246,10 @@
                 </div>
                 <div id="footer">
                     <div class="row">
-                        <div class="underline">
-                            <h4>TOKYOBIKE</h4>
-                            <ul>
-                                <li>ABOUT US</li>
+                        <div class=" cell">
+                            <h4 class="underline">TOKYOBIKE</h4>
+                            <ul class="cellList">
+                                <li class="cellList">ABOUT US</li>
                                 <li>FAQ</li>
                                 <li>PRIVACY POLIC</li>
                                 <li>TERM & CONDITIONS</li>
@@ -214,9 +257,9 @@
                                 <li>SEARCH</li>
                             </ul>
                         </div>
-                        <div class="underline">
-                            <h4>CUSTOMER SERVICE</h4>
-                            <ul>
+                        <div class="cell">
+                            <h4 class="underline">CUSTOMER SERVICE</h4>
+                            <ul class="cellList">
                                 <li>EXCHANGE & RETURNS</li>
                                 <li>ASSEMBLY</li>
                                 <li>WARRANTY</li>
@@ -227,7 +270,10 @@
                         <div class="cell">
                             <h4 class="underline">NEWSLETTER</h4>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus velit a natus totam quae rem facilis culpa, distinctio, animi rerum ratione beatae. Eaque veniam animi tempore aut doloremque magni explicabo.</p>
-                            <input placeholder="Add you email here">
+                            <form>
+                                <input placeholder="Add you email here">
+                                <button>Sign Up</button>
+                            </form>
                         </div>
                         
                     </div>
